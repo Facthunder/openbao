@@ -4,7 +4,7 @@ ENV KUBECTL_VERSION=1.30
 
 USER root
 
-RUN apk add --no-cache kubectl~${KUBECTL_VERSION} curl yq jq
+RUN apk add --no-cache kubectl~${KUBECTL_VERSION} curl yq jq retry
 
 USER openbao
 
